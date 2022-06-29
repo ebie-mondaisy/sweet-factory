@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
 
-    <br>
-    <p style="text-align: left">
-    {{ cakes }} cake and {{ shakes }} milkshake goes best with {{ cream }}
-    </p>
-    <br>
+    <div class="card">
+        <img src="../image-source/sweets-image.png" alt="Sweet" style="width:100%">
+        <div class="container">
+            <h4><b>{{ cream }}</b></h4>
+            <p>Pairs with {{ cakes }} cake and {{ shakes }} milkshake.</p>
+        </div>
+    </div>
     
-
 {% endblock body %}
