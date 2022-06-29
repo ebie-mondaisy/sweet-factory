@@ -4,4 +4,6 @@ import random
 
 @app.route('/get_milkshake', methods=['GET'])
 def milkshake():
-    milk_flavour = random.choice(["Chocolate", "Biscoff", "Strawberry", "Jammy Dodger", "Vanilla", "Cookies 'n' Cream"])
+    milk_flavour = ["Chocolate", "Biscoff", "Strawberry", "Jammy Dodger", "Vanilla", "Cookies 'n' Cream"]
+    shake = random.choice(milk_flavour)
+    return shake
