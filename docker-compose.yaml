@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  service_1:
+  sweet-factory:
     #container_name: sweet-factory
     image: radiofam24/sweet-factory-front:latest
     build: ./sweet-factory
@@ -46,7 +46,7 @@ services:
     networks:
       - sweet-net
     depends_on:
-      - service_1
+      - "service_1"
 networks:
   sweet-net:
 
