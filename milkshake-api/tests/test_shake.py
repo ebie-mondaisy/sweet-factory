@@ -9,10 +9,10 @@ class TestBase(TestCase):
         return app
 
 
-class TestCake(TestBase):
-    def test_cake_name(self):
-        with patch('random.choice') as x:
-            x.return_value = "Chocolate"
-            response = self.client.get(url_for('cake'))
+class TestShake(TestBase):
+    def test_shake_name(self):
+        with patch('random.choice') as y:
+            y.return_value = "Biscoff"
+            response = self.client.get(url_for('milkshake'))
             self.assertEqual(response.status_code, 200)
-            self.assertIn(b'Chocolate', response.data)
+            self.assertIn(b'Biscoff', response.data)

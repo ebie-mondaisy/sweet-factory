@@ -1,12 +1,27 @@
 {% extends 'base.html' %}
 {% block body %}
 
-    <div class="card">
-        <img src="../image-source/sweets-image.png" alt="Sweet" style="width:100%">
-        <div class="container">
-            <h4><b>Remember to floss!</b></h4>
-            <p>{{ cakes }} cake and {{ shakes }} milkshake give a toothache rating of {{ tooth }} out of 20! ♡〜٩( ˃▿˂ )۶〜♡</p>
+
+<div class="card result-card border-2 mt-2">
+    <div class="row align-items-start no-gutters">
+        <div class="col mx-auto">
+            <div class="card-block px-1 mb-2">
+                <h3 class="card-header">Remember to floss!</h3>
+                <p class="card-text">{{ cakes }} cake and {{ shakes }} milkshake give a toothache rating of {{ tooth }} out of 20! ♡〜٩( ˃▿˂ )۶〜♡</p>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="card-columns my-2 mx-2">
+    <img src="../image-source/sweets-image.png" alt="Sweet" style="width:100%">
+    {% for rates in six_res %}
+    <div class="container">
+            
+    {{ rates }}
     
+    </div>
+    {% endfor %}
+</div>
+
 {% endblock body %}

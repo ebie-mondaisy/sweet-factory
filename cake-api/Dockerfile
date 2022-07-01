@@ -1,7 +1,7 @@
 # Dockerfile for Python app
 FROM python:3.8
 
-WORKDIR /cake-api
+WORKDIR /app
 
 COPY . .
 
