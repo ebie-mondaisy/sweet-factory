@@ -12,9 +12,9 @@ pipeline{
                 DOCKERHUB_PASSWORD=credentials('DOCKERHUB_PASSWORD')
             }
             steps{
-                sh "docker-compose build --parallel"
+                sh "sudo docker-compose build --parallel"
                 sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
-                sh "docker-compose push"
+                sh "sudo docker-compose push"
             }
         }
     }    
