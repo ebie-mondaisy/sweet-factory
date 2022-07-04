@@ -1,39 +1,35 @@
 version: "3.8"
 services:
   sweet-factory:
-    #container_name: sweet-factory
+    container_name: sweet-factory
     image: radiofam24/sweet-factory-front:latest
     build: ./sweet-factory
     deploy:
-      replicas: 3
+      replicas: 1
     networks:
       - sweet-net
-    depends_on:
-      - service_2
-      - service_3
-      - service_4
   service_2:
-    #container_name: cake-api
+    container_name: cake-api
     image: radiofam24/sweet-factory-cake:latest
     build: ./cake-api
     deploy:
-      replicas: 3
+      replicas: 1
     networks:
       - sweet-net
   service_3:
-    #container_name: milkshake-api
+    container_name: milkshake-api
     image: radiofam24/sweet-factory-shake:latest
     build: ./milkshake-api  
     deploy:
-      replicas: 3
+      replicas: 1
     networks:
       - sweet-net
   service_4:
-    #container_name: toothache-api
+    container_name: toothache-api
     image: radiofam24/sweet-factory-tooth:latest
     build: ./toothache-api
     deploy:
-      replicas: 3
+      replicas: 1
     networks:
       - sweet-net
   nginx:
@@ -50,7 +46,7 @@ services:
     networks:
       - sweet-net
     depends_on:
-      - "service_1"
+      - "sweet-factory"
 networks:
   sweet-net:
 
