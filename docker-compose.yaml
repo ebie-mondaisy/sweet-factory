@@ -8,6 +8,10 @@ services:
       replicas: 3
     networks:
       - sweet-net
+    depends_on:
+      - service_2
+      - service_3
+      - service_4
   service_2:
     #container_name: cake-api
     image: radiofam24/sweet-factory-cake:latest
