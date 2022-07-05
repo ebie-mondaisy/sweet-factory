@@ -1,7 +1,6 @@
 from application import app
 from flask import url_for
 from flask_testing import TestCase
-import requests_mock
 
 class TestBase(TestCase):
     def create_app(self):
