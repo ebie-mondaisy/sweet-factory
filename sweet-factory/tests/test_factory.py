@@ -12,7 +12,7 @@ class TestFront(TestBase):
         with requests_mock.Mocker() as z:
             z.get('http://cake-api:5000/get_cake', text='Confetti')
             z.get('http://milkshake-api:5000/get_milkshake', text='Strawberry')
-            z.post('http://icecream-api:5000/get_toothache', text='16')
+            z.post('http://toothache-api:5000/get_toothache', text='16')
             response=self.client.get(url_for('home'))
             self.assert200(response)
             self.assertIn(b'Confetti', response.data)
