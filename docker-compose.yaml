@@ -8,7 +8,7 @@ services:
       replicas: 1
     networks:
       - sweet-net
-  service_2:
+  cake-api:
     container_name: cake-api
     image: radiofam24/sweet-factory-cake:latest
     build: ./cake-api
@@ -16,7 +16,7 @@ services:
       replicas: 1
     networks:
       - sweet-net
-  service_3:
+  milkshake-api:
     container_name: milkshake-api
     image: radiofam24/sweet-factory-shake:latest
     build: ./milkshake-api  
@@ -24,7 +24,7 @@ services:
       replicas: 1
     networks:
       - sweet-net
-  service_4:
+  toothache-api:
     container_name: toothache-api
     image: radiofam24/sweet-factory-tooth:latest
     build: ./toothache-api
