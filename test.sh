@@ -1,3 +1,4 @@
+#!/bin/bash
 declare -a directories=("sweet-factory" "cake-api" "milkshake-api" "toothache-api")
 for dir in "${directories[@]}"
 do
