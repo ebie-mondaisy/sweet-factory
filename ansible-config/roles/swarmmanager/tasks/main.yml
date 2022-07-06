@@ -14,4 +14,4 @@
     state: present
     name: sweet-factory
     compose:
-      - /home/jenkins/docker-compose.yaml 
+      - /home/radio/docker-compose.yaml 
