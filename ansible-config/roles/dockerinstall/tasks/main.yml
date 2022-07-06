@@ -10,7 +10,7 @@
     - gnupg
     - lsb-release
     - python3
-    - pythone-pip
+    - python3-pip
 
 - name: "Add gpg key"
   apt_key:
