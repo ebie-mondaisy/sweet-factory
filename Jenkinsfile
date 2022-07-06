@@ -19,8 +19,8 @@ pipeline{
         }
         stage('Deployment'){
             steps{
-                sh "scp -i ~/.ssh/id_rsa docker-compose.yaml swarm-manager:/home/jenkins/docker-compose.yaml"
-                sh "scp -i ~/.ssh/id_rsa nginx.conf swarm-manager:/home/jenkins/nginx.conf"
+                sh "scp -i ~/.ssh/id_rsa docker-compose.yaml radio@swarm-manager:/home/radio/docker-compose.yaml"
+                sh "scp -i ~/.ssh/id_rsa nginx.conf radio@swarm-manager:/home/radio/nginx.conf"
                 sh "ansible-playbook -i ansible-conifg/inventory.yaml ansible-config/playbook1.yaml"
             }
         }
