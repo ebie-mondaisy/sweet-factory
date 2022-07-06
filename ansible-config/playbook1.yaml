@@ -1,0 +1,9 @@
+- hosts: all
+  become: true
+  roles:
+  - dockerinstall
+
+- hosts: managers
+  become: true
+  roles:
+  - swarmmanager
