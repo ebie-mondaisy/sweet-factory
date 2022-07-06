@@ -1,9 +1,16 @@
-- hosts: all
+- hosts: nginx
+  become: true
+  roles:
+  - load-balance
+
+- hosts:
+  - swarm_managers
   become: true
   roles:
   - dockerinstall
 
-- hosts: managers
+- hosts: 
+  - swarm_managers
   become: true
   roles:
   - swarmmanager
