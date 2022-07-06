@@ -1,8 +1,3 @@
-- hosts: nginx
-  become: true
-  roles:
-  - load-balance
-
 - hosts:
   - swarm_managers
   become: true

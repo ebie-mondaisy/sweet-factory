@@ -17,14 +17,11 @@ pipeline{
                 sh "docker-compose push"
             }
         }
-        stage('Run Ansible'){
-            steps{
-                sh "ansible-playbook -i ansible-conifg/inventory.yaml ansible-config/playbook1.yaml"
-            }
-        }
         stage('Deployment'){
             steps{
-                sh "bash deployment.sh"
+                sh "scp -i ~/.ssh/id_rsa docker-compose.yaml radio@swarm-manager:/home/radio/docker-compose.yaml"
+                sh "scp -i ~/.ssh/id_rsa nginx.conf radio@swarm-manager:/home/radio/nginx.conf"
+                sh "ansible-playbook -i ansible-conifg/inventory.yaml ansible-config/playbook1.yaml"
             }
         }
     }    
