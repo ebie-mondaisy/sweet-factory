@@ -29,7 +29,7 @@ To ensure that my project goes in the right direction, and I am confident with h
 
 ###### During the Project
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/trello-2.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/trello%202.jpg" width="900" height="500"/>
 
 [Back to table of contents](#table-of-contents)
 
@@ -73,19 +73,19 @@ In order to test that each service works, I conducted unit testing for each of t
 
 **Sweet-Factory (Front-End) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage-1.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage-1.jpg" width="500" height="210"/>
 
 **Cake-API (Service 2) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage3.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage3.jpg" width="500" height="210"/>
 
 **Milkshake-API (Service 3) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage4.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage4.jpg" width="500" height="210"/>
 
 **Toothache-API (Service 4) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage2.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage2.jpg" width="500" height="210"/>
 
 [Back to table of contents](#table-of-contents)
 
@@ -105,7 +105,7 @@ The programming language for the application is in Python and the application wa
 - Continuous Integration VM (Jenkins): This machine was used to create builds for the application after pushes to the GitHub repo. Jenkins was used for creating a pipeline build that carries out testing, pushing images to dockerhub, configuration using ansible and deployment to another virtual machine for usage of the app.
 - Deployment VM: This machine was used to deploy the application using docker swarm and it is linked to the pipeline builds in Jenkins. Each time a change is made in the GitHub repo, Jenkins automatically starts a build, caused by a webhook, and the application displays its changes on the deployment VM. Here is an image of the deployment VM I used for deployment:
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/swarm-node.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/swarm-node.jpg" width="200" height="10"/>
 
 <sup>Note: Due to issues with networking and GCP, I was not able to get the swarm worker node to cooperate with the swarm manager. I was guided by my trainer Leon, to only use one node (swarm-manager) to deploy the app</sup>
 
