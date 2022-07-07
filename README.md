@@ -126,7 +126,7 @@ With a webhook to my GitHub repository, every time a change is pushed to GitHub,
 
 To provide an example of how the playbook works, I have attached an image below:
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/ansible-process.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/ansible-process.jpg" width="900" height="700"/>
 
 Each step shows the installation of dependencies and the deployment of the app to the virtual machine for interaction by the user.
 
