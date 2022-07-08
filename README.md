@@ -29,7 +29,7 @@ To ensure that my project goes in the right direction, and I am confident with h
 
 ###### During the Project
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/trello-2.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/trello%202.jpg" width="900" height="500"/>
 
 [Back to table of contents](#table-of-contents)
 
@@ -73,19 +73,19 @@ In order to test that each service works, I conducted unit testing for each of t
 
 **Sweet-Factory (Front-End) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage-1.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage-1.jpg" width="500" height="210"/>
 
 **Cake-API (Service 2) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage3.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage3.jpg" width="500" height="210"/>
 
 **Milkshake-API (Service 3) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage4.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage4.jpg" width="500" height="210"/>
 
 **Toothache-API (Service 4) Test**
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage2.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/coverage2.jpg" width="500" height="210"/>
 
 [Back to table of contents](#table-of-contents)
 
@@ -105,7 +105,7 @@ The programming language for the application is in Python and the application wa
 - Continuous Integration VM (Jenkins): This machine was used to create builds for the application after pushes to the GitHub repo. Jenkins was used for creating a pipeline build that carries out testing, pushing images to dockerhub, configuration using ansible and deployment to another virtual machine for usage of the app.
 - Deployment VM: This machine was used to deploy the application using docker swarm and it is linked to the pipeline builds in Jenkins. Each time a change is made in the GitHub repo, Jenkins automatically starts a build, caused by a webhook, and the application displays its changes on the deployment VM. Here is an image of the deployment VM I used for deployment:
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/swarm-node.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/swarm-node.jpg" width="300" height="50"/>
 
 <sup>Note: Due to issues with networking and GCP, I was not able to get the swarm worker node to cooperate with the swarm manager. I was guided by my trainer Leon, to only use one node (swarm-manager) to deploy the app</sup>
 
@@ -126,7 +126,7 @@ With a webhook to my GitHub repository, every time a change is pushed to GitHub,
 
 To provide an example of how the playbook works, I have attached an image below:
 
-<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/ansible-process.jpg" width="900" height="500"/>
+<img src="https://github.com/ebie-mondaisy/sweet-factory/blob/main/images/ansible-process.jpg" width="900" height="700"/>
 
 Each step shows the installation of dependencies and the deployment of the app to the virtual machine for interaction by the user.
 
@@ -157,9 +157,5 @@ There were a lot of new processes that I have worked with during this project. T
 Future works of this project are likely to involve the resolution of the docker swarm issues that were experienced and hopefully styling the application to look more aesthetically pleasing. I would also like to add a database element to the application, so users are able to look at the history of each random combination after the result has been stored in the database. Additionally, for more range, I would add more values to each of the lists in each service to provide more combinations for the user to interact with.
 
 **Conclusion and Reflections**
-
-Overall, I am happy with the outcome of the project, and I have learnt about new platforms and software that I can use in my future works. I am extremely grateful for the help and support that I have received during this project as it has helped me to progress. I would specifically like to thank my trainers Adam Gray and Leon Robinson for teaching me what I know and my colleagues for assisting with errors when they had the time.
-
-In terms of reflection, I believe I can use the elements that I have learnt and apply them to software that I create in the future. I have also noticed that I have become better at managing my time and I was able to complete this project while adhering to the constraints with time left over to make any finishing touches.
 
 [Back to table of contents](#table-of-contents)
