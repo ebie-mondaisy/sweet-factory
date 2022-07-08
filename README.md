@@ -154,6 +154,12 @@ There were a lot of new processes that I have worked with during this project. T
 
 **Future Work**
 
+Future works of this project are likely to involve the resolution of the docker swarm issues that were experienced and hopefully styling the application to look more aesthetically pleasing. I would also like to add a database element to the application, so users are able to look at the history of each random combination after the result has been stored in the database. Additionally, for more range, I would add more values to each of the lists in each service to provide more combinations for the user to interact with.
+
 **Conclusion and Reflections**
+
+Overall, I am happy with the outcome of the project, and I have learnt about new platforms and software that I can use in my future works. I am extremely grateful for the help and support that I have received during this project as it has helped me to progress. I would specifically like to thank my trainers Adam Gray and Leon Robinson for teaching me what I know and my colleagues for assisting with errors when they had the time.
+
+In terms of reflection, I believe I can use the elements that I have learnt and apply them to software that I create in the future. I have also noticed that I have become better at managing my time and I was able to complete this project while adhering to the constraints with time left over to make any finishing touches.
 
 [Back to table of contents](#table-of-contents)
